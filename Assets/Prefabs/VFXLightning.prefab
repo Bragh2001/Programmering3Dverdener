@@ -122,7 +122,7 @@ GameObject:
   - component: {fileID: 3172196878428088919}
   - component: {fileID: 5181926628491136204}
   m_Layer: 0
-  m_Name: VFXBeam
+  m_Name: VFXLightning
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
