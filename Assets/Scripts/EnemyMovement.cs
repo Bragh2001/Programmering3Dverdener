@@ -48,12 +48,12 @@ public class EnemyMovement : MonoBehaviour
         playerInSightRange = Physics.CheckSphere(transform.position, sightRange, whatIsPlayer);
         playerInAttackRange = Physics.CheckSphere(transform.position, attackRange, whatIsPlayer);
 
-        if (!playerInSightRange && !playerInAttackRange) Patroling();
+        //if (!playerInSightRange && !playerInAttackRange) Patroling();
         if (playerInSightRange && !playerInAttackRange) ChasePlayer();
         if (playerInSightRange && playerInAttackRange) AttackPlayer();
     }
 
-    void Patroling()
+    /*void Patroling()
     {
         if (!walkPointSet) SearchWalkPoint();
 
@@ -66,9 +66,9 @@ public class EnemyMovement : MonoBehaviour
         if (distanceToWalkPoint.magnitude < 1f)
             walkPointSet = false;
         
-    }
+    }*/
 
-    void SearchWalkPoint() 
+    /*void SearchWalkPoint() 
     { 
         //Calculate random point in range
         float randomZ = Random.Range(-walkPointRange, walkPointRange);
@@ -78,7 +78,7 @@ public class EnemyMovement : MonoBehaviour
 
         if (Physics.Raycast(walkPoint, -transform.up, 2f, whatIsGround))
             walkPointSet = true;
-    }
+    }*/
 
     void ChasePlayer()
     {
@@ -113,7 +113,7 @@ public class EnemyMovement : MonoBehaviour
         alreadyAttacked = false;
     }
 
-    void TakeDamage(int damage)
+    public void TakeDamage(int damage)
     {
         currentHealth -= damage;
         healthbar.SetHealth(currentHealth);

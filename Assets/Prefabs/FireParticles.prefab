@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 1857729401361416468}
   - component: {fileID: -4546304546893111036}
   - component: {fileID: 3836687051153319415}
+  - component: {fileID: -8054041005815410564}
   m_Layer: 0
   m_Name: FireParticles
   m_TagString: Untagged
@@ -4954,3 +4955,24 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!65 &-8054041005815410564
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4956636495597879967}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 7.575085, y: 6.8023186, z: 9.899021}
+  m_Center: {x: -0.3573768, y: -0.90116, z: 9.886972}
