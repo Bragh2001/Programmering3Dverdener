@@ -69,8 +69,8 @@ The game has been runned on Windows and is not tested for other platforms.
 | Visual assets             | 3.5          |
 | Sound                     | 2.5          |
 | Rapport                   | 4.5          |
-| Readme file               | 0.5          |
-| Total                     | Approx. 32   |
+| Readme file               | 1            |
+| Total                     | Approx. 32.5 |
 
 
 ## Used Resources
