@@ -5,21 +5,21 @@ using UnityEngine;
 public class DestroyProjectileAndDamage : MonoBehaviour
 {
 
-    GameObject Enemy;
-    EnemyMovement EnemyScript;
+    GameObject enemy;
+    EnemyController enemyScript;
 
-    GameObject Player;
-    PlayerController PlayerScript;
+    GameObject player;
+    PlayerController playerScript;
 
     void Start()
     {
         StartCoroutine(Wait());
 
-        Enemy = GameObject.FindGameObjectWithTag("Enemy");
-        EnemyScript = Enemy.GetComponent<EnemyMovement>();
+        enemy = GameObject.FindGameObjectWithTag("Enemy");
+        enemyScript = enemy.GetComponent<EnemyController>();
 
-        Player = GameObject.FindGameObjectWithTag("Player");
-        PlayerScript = Player.GetComponent<PlayerController>();
+        player = GameObject.FindGameObjectWithTag("Player");
+        playerScript = player.GetComponent<PlayerController>();
     }
 
     IEnumerator Wait()
@@ -32,12 +32,12 @@ public class DestroyProjectileAndDamage : MonoBehaviour
     {
         if (collision.gameObject.tag == "Enemy") 
         { 
-            EnemyScript.TakeDamage(20);
+            enemyScript.TakeDamage(20);
         }
 
         if (collision.gameObject.tag == "Player")
         {
-            PlayerScript.TakeDamage(5);
+            playerScript.TakeDamage(5);
         }
 
     }

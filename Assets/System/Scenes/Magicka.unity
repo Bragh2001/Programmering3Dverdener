@@ -400,18 +400,18 @@ MonoBehaviour:
   clickableLayers:
     serializedVersion: 2
     m_Bits: 64
-  SpawnPoint: {fileID: 1508403586}
+  spawnPoint: {fileID: 1508403586}
   maxHealth: 100
   currentHealth: 0
   healthbar: {fileID: 1670622641}
-  WaterSpray: {fileID: 4956636495597879967, guid: 0c21fc397995197498d8691e79f909c4, type: 3}
-  LifeBeam: {fileID: 0}
-  Shield: {fileID: 0}
-  ColdSpray: {fileID: 4956636495597879967, guid: 3d717427a25e5eb45ba1a21a12c5727b, type: 3}
-  Lightning: {fileID: 0}
-  ArcaneBeam: {fileID: 8678826429967129060, guid: 98cf28595df7d6b4c81a4d7cef8faf05, type: 3}
-  EarthProjectile: {fileID: 7221998315580987973, guid: bd5c3e784e980aa4fbed8722a795abf4, type: 3}
-  FireSpray: {fileID: 4956636495597879967, guid: 2c7975bd5db092541b4bdb731095154e, type: 3}
+  waterSpray: {fileID: 4956636495597879967, guid: 0c21fc397995197498d8691e79f909c4, type: 3}
+  lifeBeam: {fileID: 8678826429967129060, guid: 98cf28595df7d6b4c81a4d7cef8faf05, type: 3}
+  shield: {fileID: 0}
+  coldSpray: {fileID: 4956636495597879967, guid: 3d717427a25e5eb45ba1a21a12c5727b, type: 3}
+  lightningBeam: {fileID: 8678826429967129060, guid: 98cf28595df7d6b4c81a4d7cef8faf05, type: 3}
+  arcaneBeam: {fileID: 8678826429967129060, guid: 98cf28595df7d6b4c81a4d7cef8faf05, type: 3}
+  earthProjectile: {fileID: 7221998315580987973, guid: bd5c3e784e980aa4fbed8722a795abf4, type: 3}
+  fireSpray: {fileID: 4956636495597879967, guid: 2c7975bd5db092541b4bdb731095154e, type: 3}
 --- !u!195 &42322295
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -728,8 +728,6 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 128
   projectile: {fileID: 4865309214770636011, guid: 45804eb2722b83845adbcf2d72da12dd, type: 3}
-  walkPoint: {x: 0, y: 0, z: 0}
-  walkPointRange: 5
   timeBetweenAttacks: 3
   sightRange: 20
   attackRange: 12

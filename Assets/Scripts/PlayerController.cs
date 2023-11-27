@@ -13,20 +13,20 @@ public class PlayerController : MonoBehaviour
     NavMeshAgent agent;
     [SerializeField] LayerMask clickableLayers;
 
-    public GameObject SpawnPoint;
+    public GameObject spawnPoint;
 
     public int maxHealth = 100;
     public int currentHealth;
     public Healthbar healthbar;
 
-    public GameObject WaterSpray;
-    public GameObject LifeBeam;
-    public GameObject Shield;
-    public GameObject ColdSpray;
-    public GameObject Lightning;
-    public GameObject ArcaneBeam;
-    public GameObject EarthProjectile;
-    public GameObject FireSpray;
+    public GameObject waterSpray;
+    public GameObject lifeBeam;
+    public GameObject shield;
+    public GameObject coldSpray;
+    public GameObject lightningBeam;
+    public GameObject arcaneBeam;
+    public GameObject earthProjectile;
+    public GameObject fireSpray;
 
     void Start()
     {
@@ -49,11 +49,6 @@ public class PlayerController : MonoBehaviour
         if (Input.GetKeyUp(KeyCode.Mouse0)) 
         {
             agent.destination = transform.position;
-        }
-
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            TakeDamage(20);
         }
 
         Attack();
@@ -83,17 +78,6 @@ public class PlayerController : MonoBehaviour
         Destroy(gameObject);
     }
 
-    float BeamDistance()
-    {
-        Vector2 playerPosition = transform.position;
-        Vector3 mousePosition = Input.mousePosition;
-        Vector2 mouseWorldPosition = Camera.main.WorldToScreenPoint(mousePosition);
-
-        float BeamVector = Vector2.Distance(playerPosition, mouseWorldPosition);
-
-        return BeamVector;
-    }
-
     void Attack()
     {
         RaycastHit hit;
@@ -102,42 +86,42 @@ public class PlayerController : MonoBehaviour
 
             if (Input.GetKeyDown(KeyCode.Q))
             {
-                GameObject water = Instantiate(WaterSpray, SpawnPoint.transform.position, Quaternion.identity, transform);
+                GameObject water = Instantiate(waterSpray, spawnPoint.transform.position, Quaternion.identity, transform);
                 water.transform.LookAt(new Vector3(hit.point.x, hit.point.y + 1f, hit.point.z));
 
             }
 
             if (Input.GetKeyDown(KeyCode.W))
             {
-                GameObject life = Instantiate(LifeBeam, SpawnPoint.transform.position, Quaternion.identity, transform);
+                GameObject life = Instantiate(lifeBeam, spawnPoint.transform.position, Quaternion.identity, transform);
                 life.transform.LookAt(new Vector3(hit.point.x, hit.point.y + 1f, hit.point.z));
 
             }
 
             if (Input.GetKeyDown(KeyCode.R))
             {
-                GameObject cold = Instantiate(ColdSpray, SpawnPoint.transform.position, Quaternion.identity, transform);
+                GameObject cold = Instantiate(coldSpray, spawnPoint.transform.position, Quaternion.identity, transform);
                 cold.transform.LookAt(new Vector3(hit.point.x, hit.point.y + 1f, hit.point.z));
 
             }
 
             if (Input.GetKeyDown(KeyCode.A))
             {
-                GameObject lightning = Instantiate(Lightning, SpawnPoint.transform.position, Quaternion.identity, transform);
+                GameObject lightning = Instantiate(lightningBeam, spawnPoint.transform.position, Quaternion.identity, transform);
                 lightning.transform.LookAt(new Vector3(hit.point.x, hit.point.y + 1f, hit.point.z));
 
             }
 
             if (Input.GetKeyDown(KeyCode.S))
             {
-                GameObject arcane = Instantiate(ArcaneBeam, SpawnPoint.transform.position, Quaternion.identity, transform);
+                GameObject arcane = Instantiate(arcaneBeam, spawnPoint.transform.position, Quaternion.identity, transform);
                 arcane.transform.LookAt(new Vector3(hit.point.x, hit.point.y + 1f, hit.point.z));
 
             }
 
             if (Input.GetKeyDown(KeyCode.D))
             {
-                GameObject earth = Instantiate(EarthProjectile, SpawnPoint.transform.position, Quaternion.identity);
+                GameObject earth = Instantiate(earthProjectile, spawnPoint.transform.position, Quaternion.identity);
                 earth.transform.LookAt(new Vector3(hit.point.x, hit.point.y + 1f, hit.point.z));
                 Rigidbody rb = earth.GetComponent<Rigidbody>();
                 rb.AddForce(earth.transform.forward * 32f, ForceMode.Impulse);
@@ -146,7 +130,7 @@ public class PlayerController : MonoBehaviour
 
             if (Input.GetKeyDown(KeyCode.F))
             {
-                GameObject fire = Instantiate(FireSpray, SpawnPoint.transform.position, Quaternion.identity, transform);
+                GameObject fire = Instantiate(fireSpray, spawnPoint.transform.position, Quaternion.identity, transform);
                 fire.transform.LookAt(new Vector3(hit.point.x, hit.point.y + 1f, hit.point.z));
 
             }
