@@ -45,7 +45,8 @@ This script controls how the player moves, the different attacks it can make and
 - Stones downloaded from: https://assetstore.unity.com/packages/3d/props/exterior/stones-40329 
 - Player and Enemy are Unity primitive capsules.
 - Three particle systems of water, cold and fire which function as a spray.
-- Visual effects, VFX Graphs with Shaders which functions as beams of lightning, arcane and life. Made by following this tutorial: https://www.youtube.com/watch?v=_SaBXY-Ejqo&ab_channel=GabrielAguiarProd. 
+- Visual effects, VFX Graphs with Shaders which functions as beams of lightning, arcane and life. Made by following this tutorial: https://www.youtube.com/watch?v=_SaBXY-Ejqo&ab_channel=GabrielAguiarProd.
+- UI Element icons in the bottom left corner of the screen are a direct image from the game Magicka.
 ### Materials
 The player, enemy and ground have Basic Unity materials.
 ### Scenes
@@ -74,12 +75,13 @@ The game has been runned on Windows and is not tested for other platforms.
 
 
 ## Used Resources
-FULL 3D ENEMY AI in 6 MINUTES! || Unity Tutorial By Dave / GameDevelopment: https://www.youtube.com/watch?v=UjkSFoLxesw&ab_channel=Dave%2FGameDevelopment   
-Click To Move | Unity RPG Tutorial #1 By Pogle: https://www.youtube.com/watch?v=LVu3_IVCzys&ab_channel=Pogle   
-How to make a HEALTH BAR in Unity! By Brackeys: https://www.youtube.com/watch?v=BLfNP4Sc_iA&ab_channel=Brackeys   
-Unity VFX Graph - Stylized Laser Beam Tutorial by Gabriel Aguiar Prod.: https://www.youtube.com/watch?v=_SaBXY-Ejqo&ab_channel=GabrielAguiarProd.   
-Medieval Buildings Exteriors By Lukas Bobor: https://assetstore.unity.com/packages/3d/environments/historic/medieval-buildings-exteriors-72836   
-Low Poly RPG Fantasy Weapons Lite By JustCreate: https://assetstore.unity.com/packages/3d/props/weapons/low-poly-rpg-fantasy-weapons-lite-226554   
-Free Low Poly Forest Nature Pack By Deadly Props: https://assetstore.unity.com/packages/3d/environments/free-low-poly-forest-nature-pack-84621   
-Stones By Pixelcloud: https://assetstore.unity.com/packages/3d/props/exterior/stones-40329   
+- FULL 3D ENEMY AI in 6 MINUTES! || Unity Tutorial By Dave / GameDevelopment: https://www.youtube.com/watch?v=UjkSFoLxesw&ab_channel=Dave%2FGameDevelopment   
+- Click To Move | Unity RPG Tutorial #1 By Pogle: https://www.youtube.com/watch?v=LVu3_IVCzys&ab_channel=Pogle   
+- How to make a HEALTH BAR in Unity! By Brackeys: https://www.youtube.com/watch?v=BLfNP4Sc_iA&ab_channel=Brackeys   
+- Unity VFX Graph - Stylized Laser Beam Tutorial by Gabriel Aguiar Prod.: https://www.youtube.com/watch?v=_SaBXY-Ejqo&ab_channel=GabrielAguiarProd.   
+- Medieval Buildings Exteriors By Lukas Bobor: https://assetstore.unity.com/packages/3d/environments/historic/medieval-buildings-exteriors-72836   
+- Low Poly RPG Fantasy Weapons Lite By JustCreate: https://assetstore.unity.com/packages/3d/props/weapons/low-poly-rpg-fantasy-weapons-lite-226554   
+- Free Low Poly Forest Nature Pack By Deadly Props: https://assetstore.unity.com/packages/3d/environments/free-low-poly-forest-nature-pack-84621   
+- Stones By Pixelcloud: https://assetstore.unity.com/packages/3d/props/exterior/stones-40329  
+- All sounds in the game are downloaded from https://freesound.org/   
 
