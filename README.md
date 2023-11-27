@@ -15,7 +15,12 @@ In Magicorse a wizard fights against a goblin. They walk around in a little vill
 - Enemy - Follows the player if they are in sight and attacks with bow and arrow if they are in range.
 - Environment - A plane with houses, trees and flowers, where the player and enemy can move around in. They can only move on the NavMesh Surface.
 - Camera - Follows the player from a set position using Cinemachine Virtual camera.
-- Healthbar - Shows the health of the player and enemy in a slider under them as UI in world space.  
+- Healthbar - Shows the health of the player and enemy in a slider under them as UI in world space.
+
+## How to run it
+Download Unity with 2021.3.8f1.  
+Download or clone the project.  
+Mouse and keyboard are need to play the game.  
 
 ## Used parts of the course
 For the player to move around and the weapons to fire in the right direction, raycasting was used to find the hit point of the mouse on the plane in the game by casting a ray between the two. The element water, cold and fire are sprayed out using Unity Particle Systems. For the player and enemy to take damage the prefabs which are used as weapons have rigidbodies for them to respond to colliders and have some standard physics behavior. They also have colliders so the onCollisionEnter can be used. When the different objects collide with one of the two damage is given. The player and enemy are NavMesh Agents which gives them the option to move around on the NavMesh Surface placed on the Plane. The NavMesh Surface determines, when baked, what the agents can move on. The primitive capsules from Unity used as player and enemy have materials with different colors to differentiate the two from each other. 
