@@ -31,7 +31,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7d4c867f6b72b714dbb5fd1780afe208, type: 3}
-  m_Name: VFXBeam 1
+  m_Name: VFXArcane
   m_EditorClassIdentifier: 
   m_UIIgnoredErrors: []
   m_Parent: {fileID: 0}
@@ -83,7 +83,7 @@ VisualEffectResource:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: VFXBeam 1
+  m_Name: VFXArcane
   m_Graph: {fileID: 114350483966674976}
   m_Infos:
     m_RendererSettings:
@@ -1062,7 +1062,7 @@ MonoBehaviour:
       m_Type:
         m_SerializableType: UnityEngine.Color, UnityEngine.CoreModule, Version=0.0.0.0,
           Culture=neutral, PublicKeyToken=null
-      m_SerializableObject: '{"r":2.60392165184021,"g":0.5734380483627319,"b":0.09411758929491043,"a":1.0}'
+      m_SerializableObject: '{"r":2.60392165184021,"g":0.1205047145485878,"b":0.09543171525001526,"a":1.0}'
     m_Space: 2147483647
   m_Property:
     name: _Color
@@ -4077,7 +4077,7 @@ MonoBehaviour:
       m_Type:
         m_SerializableType: UnityEngine.Color, UnityEngine.CoreModule, Version=0.0.0.0,
           Culture=neutral, PublicKeyToken=null
-      m_SerializableObject: '{"r":0.30188655853271487,"g":0.023584887385368348,"b":0.0,"a":1.0}'
+      m_SerializableObject: '{"r":0.3019607961177826,"g":0.0,"b":0.020457549020648004,"a":1.0}'
     m_Space: 2147483647
   m_Property:
     name: _Color
@@ -8294,7 +8294,7 @@ MonoBehaviour:
       m_Type:
         m_SerializableType: UnityEngine.Vector3, UnityEngine.CoreModule, Version=0.0.0.0,
           Culture=neutral, PublicKeyToken=null
-      m_SerializableObject: '{"x":60.41877365112305,"y":19.402772903442384,"z":1.3679704666137696}'
+      m_SerializableObject: '{"x":60.41878890991211,"y":1.5816432237625123,"z":2.163968086242676}'
     m_Space: 2147483647
   m_Property:
     name: Color
@@ -9897,7 +9897,7 @@ MonoBehaviour:
       m_Type:
         m_SerializableType: UnityEngine.Vector3, UnityEngine.CoreModule, Version=0.0.0.0,
           Culture=neutral, PublicKeyToken=null
-      m_SerializableObject: '{"x":24.251462936401368,"y":7.664116859436035,"z":1.4642378091812134}'
+      m_SerializableObject: '{"x":24.251461029052736,"y":1.523652195930481,"z":2.647172212600708}'
     m_Space: 2147483647
   m_Property:
     name: Color
