@@ -6,7 +6,7 @@ using UnityEngine.AI;
 
 public class EnemyController : MonoBehaviour
 {
-
+    //This script is controlling the enemy.
     public int maxHealth = 100;
     public int currentHealth;
     public Healthbar healthbar;
@@ -16,11 +16,11 @@ public class EnemyController : MonoBehaviour
     public LayerMask whatIsGround, whatIsPlayer;
     public GameObject projectile;
 
-    //Attacking
+    //For Attacking
     public float timeBetweenAttacks;
     bool alreadyAttacked;
 
-    //States
+    //For States
     public float sightRange, attackRange;
     public bool playerInSightRange, playerInAttackRange;
 
