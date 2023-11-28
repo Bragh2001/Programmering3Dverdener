@@ -9,7 +9,7 @@ By Rikke Bragh Jensen
 
 
 ## Overview of the game  
-In Magicorse a wizard fights against a goblin. They walk around in a little village area and attack each other. The player is the wizard, who casts the different elements of water, life, cold, lightning, arcane, earth and fire onto the goblin, and the enemy goblin fights back with a bow and arrows. The game is an action-adventure RPG.
+In Magicorse a wizard fights against a goblin. They walk around in a little village area and attack each other. The player is the wizard, who casts the different elements of water, life, cold, lightning, arcane, earth and fire onto the goblin, and the enemy goblin fights back with a bow and arrows. The game is an action-adventure.
 ### The game’s elements:
 - Player - Moves by holding the left mouse button down, can attack with different elements by either pressing Q, W, R, A, S, D or F. 
 - Enemy - Follows the player if they are in sight and attacks with bow and arrow if they are in range.
@@ -64,14 +64,14 @@ The game has been runned on Windows and is not tested for other platforms.
 | Hold to move              | 2            |
 | Enemy movement and attack | 3            |
 | Player attack             | 7            |
-| Healthbar                 | 2            |
+| Healthbar                 | 3            |
 | Taking Damage             | 3            |
 | VFX stylized beams        | 4            |
 | Visual assets             | 3.5          |
 | Sound                     | 2.5          |
 | Rapport                   | 4.5          |
 | Readme file               | 1            |
-| Total                     | Approx. 32.5 |
+| Total                     | Approx. 33.5 |
 
 
 ## Used Resources
