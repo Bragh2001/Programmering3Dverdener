@@ -4,10 +4,10 @@ using UnityEngine;
 
 public class Billboard : MonoBehaviour
 {
-    public Transform cam;
+    public Transform target;
 
-    void LateUpdate()
+    private void Update()
     {
-        transform.LookAt(transform.position + cam.forward);
+        transform.position = new Vector3(target.transform.position.x + 0.5f, target.transform.position.y - 1f, target.transform.position.z + 0.5f);
     }
 }

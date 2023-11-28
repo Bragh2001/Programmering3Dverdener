@@ -7,6 +7,7 @@ using Unity.VisualScripting;
 using Unity.Mathematics;
 using System;
 using static UnityEditor.Experimental.GraphView.GraphView;
+using System.IO;
 
 public class PlayerController : MonoBehaviour
 {
@@ -87,6 +88,7 @@ public class PlayerController : MonoBehaviour
             if (Input.GetKeyDown(KeyCode.Q))
             {
                 GameObject water = Instantiate(waterSpray, spawnPoint.transform.position, Quaternion.identity, transform);
+                water.GetComponent<DestroyProjectileAndDamage>().parent = this.gameObject;
                 water.transform.LookAt(new Vector3(hit.point.x, hit.point.y + 1f, hit.point.z));
 
             }
@@ -101,6 +103,7 @@ public class PlayerController : MonoBehaviour
             if (Input.GetKeyDown(KeyCode.R))
             {
                 GameObject cold = Instantiate(coldSpray, spawnPoint.transform.position, Quaternion.identity, transform);
+                cold.GetComponent<DestroyProjectileAndDamage>().parent = this.gameObject;
                 cold.transform.LookAt(new Vector3(hit.point.x, hit.point.y + 1f, hit.point.z));
 
             }
@@ -122,6 +125,7 @@ public class PlayerController : MonoBehaviour
             if (Input.GetKeyDown(KeyCode.D))
             {
                 GameObject earth = Instantiate(earthProjectile, spawnPoint.transform.position, Quaternion.identity);
+                earth.GetComponent<DestroyProjectileAndDamage>().parent = this.gameObject;
                 earth.transform.LookAt(new Vector3(hit.point.x, hit.point.y + 1f, hit.point.z));
                 Rigidbody rb = earth.GetComponent<Rigidbody>();
                 rb.AddForce(earth.transform.forward * 32f, ForceMode.Impulse);
@@ -131,6 +135,7 @@ public class PlayerController : MonoBehaviour
             if (Input.GetKeyDown(KeyCode.F))
             {
                 GameObject fire = Instantiate(fireSpray, spawnPoint.transform.position, Quaternion.identity, transform);
+                fire.GetComponent<DestroyProjectileAndDamage>().parent = this.gameObject;
                 fire.transform.LookAt(new Vector3(hit.point.x, hit.point.y + 1f, hit.point.z));
 
             }

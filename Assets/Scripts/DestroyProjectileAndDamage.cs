@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class DestroyProjectileAndDamage : MonoBehaviour
 {
+    public GameObject parent;
+
+    bool DoneDamage;
 
     GameObject enemy;
     EnemyController enemyScript;
@@ -15,8 +18,11 @@ public class DestroyProjectileAndDamage : MonoBehaviour
     {
         StartCoroutine(Wait());
 
-        enemy = GameObject.FindGameObjectWithTag("Enemy");
-        enemyScript = enemy.GetComponent<EnemyController>();
+        if (GameObject.FindGameObjectsWithTag("Enemy").Length > 0)
+        {
+            enemy = GameObject.FindGameObjectWithTag("Enemy");
+            enemyScript = enemy.GetComponent<EnemyController>();
+        }
 
         player = GameObject.FindGameObjectWithTag("Player");
         playerScript = player.GetComponent<PlayerController>();
@@ -30,14 +36,20 @@ public class DestroyProjectileAndDamage : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        if (collision.gameObject.tag == "Enemy") 
-        { 
-            enemyScript.TakeDamage(20);
-        }
-
-        if (collision.gameObject.tag == "Player")
+        
+        if(DoneDamage == false && parent != collision.gameObject)
         {
-            playerScript.TakeDamage(5);
+            if (collision.gameObject.tag == "Enemy")
+            {
+                enemyScript.TakeDamage(20);
+                DoneDamage = true;
+            }
+
+            if (collision.gameObject.tag == "Player")
+            {
+                playerScript.TakeDamage(5);
+                DoneDamage = true;
+            }
         }
 
     }

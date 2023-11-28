@@ -62,6 +62,7 @@ public class EnemyController : MonoBehaviour
         {
             //Attack code
             GameObject arrow = Instantiate(projectile, transform.position, Quaternion.identity);
+            arrow.GetComponent<DestroyProjectileAndDamage>().parent = this.gameObject;
             arrow.transform.Rotate(new Vector3(-90,0, 0));
             Rigidbody rb = arrow.GetComponent<Rigidbody>();
 

@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.44657874, g: 0.49641275, b: 0.5748172, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -381,7 +381,6 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 1633403112}
   - {fileID: 1508403587}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -613,7 +612,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!136 &85850189
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -700,7 +699,6 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 533551376}
   - {fileID: 1710896429}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -718,7 +716,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 100
   currentHealth: 0
-  healthbar: {fileID: 1670622641}
+  healthbar: {fileID: 1984317132}
   agent: {fileID: 85850194}
   player: {fileID: 42322293}
   whatIsGround:
@@ -1608,7 +1606,7 @@ GameObject:
   - component: {fileID: 533551377}
   - component: {fileID: 533551380}
   m_Layer: 5
-  m_Name: Canvas (1)
+  m_Name: EnemyCanvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1622,12 +1620,12 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 533551375}
   m_LocalRotation: {x: 0.36490634, y: 0.2783156, z: 0.8809619, w: -0.115282096}
-  m_LocalPosition: {x: 0, y: 0, z: 0.92}
-  m_LocalScale: {x: 0.01, y: 0.01, z: 0.01}
+  m_LocalPosition: {x: 0, y: 0, z: -15}
+  m_LocalScale: {x: 0.010000003, y: 0.010000002, z: 0.01}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1984317131}
-  m_Father: {fileID: 85850192}
+  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: -35.065, y: 45, z: 180}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -1709,7 +1707,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4bd8d466569fdf1498480adca331a34a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cam: {fileID: 963194228}
+  target: {fileID: 85850192}
 --- !u!1001 &582001199
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5014,7 +5012,7 @@ GameObject:
   - component: {fileID: 1633403109}
   - component: {fileID: 1633403113}
   m_Layer: 5
-  m_Name: Canvas
+  m_Name: PlayerCanvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5080,7 +5078,7 @@ Canvas:
   m_VertexColorAlwaysGammaSpace: 0
   m_AdditionalShaderChannelsFlag: 0
   m_UpdateRectTransformForStandalone: 0
-  m_SortingLayerID: 0
+  m_SortingLayerID: -469897729
   m_SortingOrder: 0
   m_TargetDisplay: 0
 --- !u!224 &1633403112
@@ -5092,11 +5090,11 @@ RectTransform:
   m_GameObject: {fileID: 1633403108}
   m_LocalRotation: {x: 0.36490634, y: 0.2783156, z: 0.8809619, w: -0.115282096}
   m_LocalPosition: {x: 0, y: 0, z: 0.53}
-  m_LocalScale: {x: 0.01, y: 0.01, z: 0.01}
+  m_LocalScale: {x: 0.010000001, y: 0.010000001, z: 0.01}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1670622640}
-  m_Father: {fileID: 42322293}
+  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: -35.065, y: 45, z: 180}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -5115,7 +5113,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4bd8d466569fdf1498480adca331a34a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cam: {fileID: 963194228}
+  target: {fileID: 42322293}
 --- !u!1 &1670622639
 GameObject:
   m_ObjectHideFlags: 0
@@ -5674,7 +5672,7 @@ RectTransform:
   m_Father: {fileID: 1984317131}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
+  m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -6526,6 +6524,8 @@ SceneRoots:
   - {fileID: 705507995}
   - {fileID: 3997996428030511629}
   - {fileID: 42322293}
+  - {fileID: 1633403112}
   - {fileID: 85850192}
+  - {fileID: 533551376}
   - {fileID: 433581365}
   - {fileID: 1031093050}
