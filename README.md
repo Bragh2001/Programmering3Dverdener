@@ -73,7 +73,7 @@ The game has been runned on Windows and is not tested for other platforms.
 | Readme file               | 1            |
 | Comment code              | 1.5          |
 | Presentation              | 2            |
-| Total                     | Approx. 37   |
+| Total                     | Approx. 38.5 |
 
 
 ## Used Resources
